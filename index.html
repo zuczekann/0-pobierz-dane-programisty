@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX: POBIERZ DANE PROGRAMISTY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <br>
+    <h1>AJAX: POBIERZ DANE PROGRAMISTY</h1>
+    <br><br>
+
+    <!-- v1 -->
+    <h2><span>v1: </span>XMLHttpRequest ładuje dane bezpośrednio po otwarciu strony  </h1>
+    <p id="imie"></p> 
+    <p id="nazwisko"></p> 
+    <p id="zawod"></p> 
+    <p id="firma"></p> 
+    <br>
+    
+    <!-- v2 -->
+    <h2><span>v2 (fetch):  </span>pobierz dane po naciśnięciu przycisku </h2>
+    <button id="btt-v2-get">Pobierz dane programisty</button>
+    <div id="version2"></div>
+    <br>
+
+    <!-- v3 -->
+    <h2><span>v3 (jQuery - GetJSON):  </span>pobierz dane po naciśnięciu przycisku </h2>
+    <button id="btt-v3-getJSON">Pobierz dane programisty</button>
+    <div id="version3"></div>
+    <br>
+
+    <!-- v4 -->
+    <h2><span>v4 (Ajax - Get):  </span>pobierz dane po naciśnięciu przycisku </h2>
+    <button id="btt-v4-get">Pobierz dane programisty</button>
+    <div id="v4-dane-programisty"></div>
+    <br>   
+
+    <!-- v5 -->
+    <h2><span>v5 (jQuery - Get):  </span>pobierz dane po naciśnięciu przycisku </h2>
+    <button id="btt-v5-get">Pobierz dane programisty</button>
+    <br>     
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>        
+
+    <script src="js/v1_XMLHttpRequest.js"></script>
+    <script src="js/v2_fetch_script.js"></script> 
+    <script src="js/v3_jQuery_GetJSON_script.js"></script> 
+    <script src="js/v4_GetAjax_script.js"></script> 
+    <script src="js/v5_jQuery_Get_script.js"></script> 
+
+</body>
+</html>
